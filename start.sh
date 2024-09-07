@@ -33,8 +33,9 @@ else
 fi
 
 # Then we update the source if needed
-echo "Updating source if required..."
+echo "Updating source/dependencies if required..."
 git fetch && git pull > /dev/null 2>&1
+sudo apt install simg2img -y > /dev/nuul 2>&1
 
 PROJECT()
 {
