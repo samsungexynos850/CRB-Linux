@@ -35,7 +35,13 @@ fi
 # Then we update the source if needed
 echo "Updating source/dependencies if required..."
 git fetch && git pull > /dev/null 2>&1
-sudo apt install simg2img -y > /dev/nuul 2>&1
+sudo apt install simg2img -y > /dev/null 2>&1
+
+if [ -e ./tools/project ]; then
+    :
+else
+	touch ./tools/project
+fi
 
 PROJECT()
 {
@@ -57,8 +63,6 @@ if [ ! -s "tools/project" ]; then
 fi
 
 }
-
-
 
 # Print the menu
 PRINT()
