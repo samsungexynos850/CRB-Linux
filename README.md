@@ -9,7 +9,7 @@ Update Dependencies:
 
 Download The Kitchen:
 
-	$ git clone --depth=1 -b main https://github.com/Samsung-Galaxy-A21s/CRB-Linux
+	$ git clone --depth=1 -b stable https://github.com/Samsung-Galaxy-A21s/CRB-Linux
 	$ cd CRB-Linux
 
 How To Use:
