@@ -9,7 +9,7 @@ This kitchen only currently supports debian based linux distributions and so mod
 Update Dependencies:
 
     $ sudo apt update && sudo apt upgrade -y
-    $ sudo apt install android-sdk-libsparse-utils -y
+    $ sudo apt install android-sdk-libsparse-utils simg2img -y
 
 Download The Kitchen:
 
