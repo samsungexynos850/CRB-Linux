@@ -52,7 +52,7 @@ else
   echo "Mounted optics.img"
 fi
 
-sleep 0.5
+sleep 0.25
 cd ../../..
 
 

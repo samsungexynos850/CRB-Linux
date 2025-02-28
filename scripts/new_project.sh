@@ -7,7 +7,7 @@ echo ""
 
 if [ -e "./Projects/$project_name" ]; then
     echo -e "${BOLD_RED}[Error 1] $project_name already exists!${RESET}"
-    sleep 2
+    sleep 1
     exit 0
 fi
 
@@ -30,4 +30,4 @@ else
     exit 0
 fi
 
-sleep 0.75
+sleep 0.4

@@ -68,7 +68,7 @@ fi
 # Print the menu
 PRINT()
 {
-	echo -e "                                                 ${BOLD_BLUE}${UNDERLINE}Welcome To CRB-Linux Kitchen - By RiskyGUY22${RESET}${RESET}"
+	echo -e "                                                 ${BOLD_BLUE}${UNDERLINE}Welcome To CRB-Linux Kitchen - By DaemonMCR${RESET}${RESET}"
 	echo -e "${BOLD_RED}**PROJECT MANAGEMENT**${RESET}                                    ${BOLD}${PINK}${UNDERLINE}Selected Project: $CURRENT_PROJECT${RESET}${RESET}${RESET}"
 	echo -e "1)  New Project"
 	echo -e "2)  Select Project"
@@ -108,11 +108,18 @@ MAIN()
 	# Set the option to 0
 	option=0
 	# Loop until the user exits
-	while [ "$option" -ne 14  ]; do
+	while true; do
 		PROJECT
 		PRINT
 
 		read -p "OPTION: " option
+
+		# Check if input is a number
+		if ! [[ "$option" =~ ^[0-9]+$ ]]; then
+			echo -e "${BOLD_RED}\n[Error 1] Invalid option!${RESET}"
+			sleep 0.4
+			continue
+		fi
 
 		case $option in
 			1)
@@ -186,9 +193,8 @@ MAIN()
 				exit 0
 				;;
 			*)
-				echo ""
-				echo -e "${BOLD_RED}[Error 1] Invalid option!${RESET}"
-				sleep 1.5
+				echo -e "${BOLD_RED}\n[Error 1] Invalid option!${RESET}"
+				sleep 0.4
 				;;
 
 		esac

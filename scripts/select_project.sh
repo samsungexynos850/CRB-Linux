@@ -32,4 +32,4 @@ else
 	exit 0
 fi
 
-sleep 0.5
+sleep 0.4
