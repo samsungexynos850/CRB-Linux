@@ -1,5 +1,9 @@
 # **CRB Kitchen for Linux**
 
+## Information
+
+This kitchen only currently supports debian based linux distributions and so modifications to the code may be required for other distributions.
+
 ## Prepare:
 
 Update Dependencies:
@@ -9,7 +13,7 @@ Update Dependencies:
 
 Download The Kitchen:
 
-	$ git clone --depth=1 -b stable https://github.com/Samsung-Galaxy-A21s/CRB-Linux
+	$ git clone -b stable https://github.com/samsungexynos850/CRB-Linux.git
 	$ cd CRB-Linux
 
 How To Use:
@@ -23,5 +27,5 @@ How To Use:
 - Then Repack those images
 
 Any Bugs or Questions send me a message [here](https://t.me/thomas_turner36)
-Or post a message in the XDA Forums
+
 
