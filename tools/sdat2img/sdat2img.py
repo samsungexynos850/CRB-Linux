@@ -57,8 +57,8 @@ def main(TRANSFER_LIST_FILE, NEW_DATA_FILE, OUTPUT_IMAGE_FILE):
                 # Skip lines starting with numbers, they are not commands anyway
                 if not cmd[0].isdigit():
                     print('Command "{}" is not valid.'.format(cmd), file=sys.stderr)
-                    trans_list.close()
-                    sys.exit(1)
+                    #trans_list.close()
+                    #sys.exit(1)
 
         trans_list.close()
         return version, new_blocks, commands
